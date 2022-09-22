@@ -64,7 +64,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
-    column-gap: 60px;
+    column-gap: 70px;
     margin: 0 auto;
 }
 
@@ -112,8 +112,7 @@ span {
 .album-title {
     font-size: 32px;
     display: block;
-    margin-left: 50px;
-    color: rgb(140, 255, 0);
+    margin-left: 40px;
 }
 
 .album-container {
