@@ -36,8 +36,8 @@ body {
 }
 
 .page {
-  background-color: rgb(230, 230, 230);
   color: rgb(40, 40, 40);
+  background-color: rgb(230, 230, 230);
   min-height: calc(100vh - 100px);
 }
 
@@ -54,7 +54,7 @@ body {
   border: 2px solid red;
   padding: 8px;
   margin: 8px;
-  float: left;
+  display: inline-flex;
 }
 
 table {

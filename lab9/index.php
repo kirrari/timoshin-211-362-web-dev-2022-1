@@ -22,10 +22,15 @@
       $min_value = -2000000;
       $max_value = 2000000;
 
+      $min = PHP_INT_MAX;
+      $max = PHP_INT_MIN;
+      $avg;
+      $sum = 0;
+
       $x = -10;	// начальное значение аргумента
       $encounting = 10000;	// количество вычисляемых значений
       $step = 2;	// шаг изменения аргумента
-      $type = 'A';	// тип верстки
+      $type = 'D';	// тип верстки
 
       switch ($type) {
         case 'B':
@@ -49,6 +54,12 @@
         };
 
         $f = round($f, 3);
+
+        $sum += $f;
+        $avg = $sum / ($i + 1);
+
+        if ($f < $min) $min = $f;
+        if ($f > $max) $max = $f;
 
         switch ($type) {
           case 'A': 
@@ -82,6 +93,13 @@
           echo '</table>';
           break;
       }
+
+      echo '<br><br>';
+
+      echo 'Минимальное: '.$min.'<br>';
+      echo 'Максимальное: '.$max.'<br>';
+      echo 'Сумма: '.round($sum, 3).'<br>';
+      echo 'Среднее арифметическое: '.round($avg, 3);
     ?>
     </div>
   </main>
