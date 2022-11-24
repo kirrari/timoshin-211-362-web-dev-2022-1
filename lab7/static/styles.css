@@ -1,0 +1,114 @@
+body {
+  font-family: arial;
+  margin: 0;
+  background-color: rgb(30, 30, 30);
+}
+
+header {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+footer {
+  padding-top: 45px;
+  text-align: center;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+}
+
+.calc {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #000;
+  margin: 100px auto;
+  background: #000;
+  border-radius: 20px;
+  color: #fdfdfd;
+  display: grid;
+  padding: 18px;
+  box-shadow: 0 0 6px #000000;
+}
+
+.calc-screen {
+  height: 125px;
+  position: relative;
+  padding: 10px 5px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.calc-screen p {
+  text-align: right;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    'ac plus-minus percent division'
+    'seven eigth nine multi'
+    'four five siz minus'
+    'one two three plus'
+    'zero zero dot equal';
+  grid-gap: 7px;
+  justify-items: center;
+  align-items: center;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 63px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  user-select: none; /*кнопку нельзя выделить */
+}
+.btn:hover {
+  filter: brightness(130%);
+}
+.btn:active {
+  filter: brightness(90%);
+}
+.bg-grey {
+  background-color: #a6a6a6;
+}
+
+.bg-dark-grey {
+  background-color: #333;
+}
+
+.bg-orange {
+  background-color: #ff9501;
+}
+
+.btn.plus-minus {
+  grid-area: plus-minus;
+}
+
+.btn.percent {
+  grid-area: percent;
+}
+
+.btn.division {
+  grid-area: division;
+}
+
+.btn.zero {
+  grid-area: zero; /* расположение 0 в сетке */
+  width: 100%;
+  border-radius: 34px;
+}
