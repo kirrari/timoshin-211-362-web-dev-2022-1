@@ -19,18 +19,18 @@
   <main class="page">
     <div class="main__content container">
     <?php
-      $min_value = -2000000;
+      $min_value = -200000;
       $max_value = 2000000;
 
       $min = PHP_INT_MAX;
       $max = PHP_INT_MIN;
-      $avg;
+      $avg = 0;
       $sum = 0;
 
       $x = -10;	// начальное значение аргумента
       $encounting = 10000;	// количество вычисляемых значений
-      $step = 2;	// шаг изменения аргумента
-      $type = 'D';	// тип верстки
+      $step = 1;	// шаг изменения аргумента
+      $type = 'E';	// тип верстки
 
       switch ($type) {
         case 'B':
@@ -49,17 +49,18 @@
         else if ($x < 20) $f = ($x + 3) * ($x * $x);	
         else if ($x != 25) $f = 3 / ($x - 25);
         else {
-          echo '<p>error</p>';
-          continue;
+          $f = 'error';
         };
 
-        $f = round($f, 3);
+        if ($f != 'error') {
+          $f = round($f, 3);
 
-        $sum += $f;
-        $avg = $sum / ($i + 1);
+          $sum += $f;
+          $avg = $sum / ($i + 1);
 
-        if ($f < $min) $min = $f;
-        if ($f > $max) $max = $f;
+          if ($f < $min) $min = $f;
+          if ($f > $max) $max = $f;
+        }
 
         switch ($type) {
           case 'A': 
@@ -79,7 +80,7 @@
             break;
         }
 
-        if ($f >= $max_value || $f < $min_value)	break;
+        if ($f != 'error' && ($f >= $max_value || $f < $min_value)) break;
       }
 
       switch ($type) {

@@ -1,3 +1,3 @@
 <?php
-$mysql = new mysqli('localhost:8889', 'root', 'root', 'work');
+$mysql = new mysqli('localhost:888f9', 'root', 'root', 'work');
 ?>

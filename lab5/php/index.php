@@ -1,7 +1,7 @@
 <?php 
 $current_page = "index.php";
 
-$title = "Тимошин Никита Игоревич, Группа 211-362, Лабораторная работа №3";
+$title = "Тимошин Никита Игоревич, Группа 211-362, Лабораторная работа №5";
 date_default_timezone_set("Europe/Moscow");
 $date = date("d.m.y");  
 $time = date("h:m:s"); 

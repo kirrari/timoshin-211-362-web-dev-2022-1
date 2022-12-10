@@ -75,6 +75,8 @@ function pluralization(n) {
   return start + n + end;
 }
 
+console.log(pluralization(23))
+
 // Числа Фибоначчи
 
 function fibb(n) {
