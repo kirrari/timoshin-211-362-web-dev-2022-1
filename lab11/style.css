@@ -104,6 +104,10 @@ main {
   cursor: pointer;
 }
 
+.content__item-selected li {
+  color: rgb(130, 130, 130);
+}
+
 .content__item:hover {
   color: rgb(0, 0, 0);
   color: rgb(130, 130, 130);
@@ -119,7 +123,7 @@ main {
 }
 
 .result__item {
-  padding: 10px;
+  padding: 10px 30px;
   border: 1px solid rgb(30, 30, 30);
   font-size: 18px;
   cursor: pointer;
@@ -131,7 +135,7 @@ table {
 }
 
 td {
-  padding: 20px;
+  padding: 15px 30px;
   font-size: 20px;
   color: rgb(30, 30, 30);
 }
@@ -159,6 +163,7 @@ td {
 }
 
 .fullblock__item {
+  width: 91px;
   padding: 15px 10px;
   border: 1px solid rgb(30, 30, 30);
 }

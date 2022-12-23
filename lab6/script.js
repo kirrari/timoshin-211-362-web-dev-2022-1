@@ -1,4 +1,10 @@
 // Возведение в степень
+const powResult = document.querySelector('.pow');
+const nodResult = document.querySelector('.nod');
+const minNumberResult = document.querySelector('.min-number');
+const pluralizationResult = document.querySelector('.pluralization');
+const fibbResult = document.querySelector('.fibb');
+
 function pow(a, n) {
   let res = 1;
 
@@ -9,7 +15,8 @@ function pow(a, n) {
   return res;
 }
 
-console.log(pow(3, 6));
+console.log(pow(3, 4));
+powResult.textContent = pow(3, 4);
 
 // Нахождение НОД
 
@@ -19,7 +26,8 @@ function nod(x, y) {
   return nod(y, x % y);
 }
 
-console.log(nod(25, 100));
+console.log(nod(125, 800));
+nodResult.textContent = nod(125, 800);
 
 // Наименьшая цифра
 
@@ -34,6 +42,7 @@ function minNumber(a) {
 }
 
 console.log(minNumber(7394));
+minNumberResult.textContent = minNumber(7394);
 
 // Pluralization
 
@@ -75,7 +84,8 @@ function pluralization(n) {
   return start + n + end;
 }
 
-console.log(pluralization(23))
+console.log(pluralization(0));
+pluralizationResult.textContent = pluralization(0);
 
 // Числа Фибоначчи
 
@@ -91,4 +101,5 @@ function fibb(n) {
   return next;
 }
 
-console.log(fibb(7));
+console.log(fibb(6));
+fibbResult.textContent = fibb(6);

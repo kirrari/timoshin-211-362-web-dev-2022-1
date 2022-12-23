@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Тимошин Н.И. 211-362 Лабораторная работа №10</title>
+    <title>Тимошин Н.И. 211-362 Лабораторная работа №11</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <header>
         <div class="wrapper">
             <div class="header__wrapper">
-                <div class="logo"><a href="./index.php">Тимошин Н.И. 211-362 Лабораторная работа №10</a></div>
+                <div class="logo"><a href="./index.php">Тимошин Н.И. 211-362 Лабораторная работа №11</a></div>
                 <div class="types">
                     <a class=<?php 
                         if (isset($_GET["type"])) {

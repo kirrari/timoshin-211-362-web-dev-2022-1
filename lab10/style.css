@@ -20,6 +20,10 @@ td {
   width: 200px;
 }
 
+p {
+  margin: 0 0 10px 0;
+}
+
 .container {
   width: 1000px;
   margin: 0 auto;
